@@ -33,6 +33,26 @@
 
 		</activity>
 
+		<activity
+			android:theme="@style/Transparent"
+			android:name=".HearsAssestant">
+
+			<intent-filter>
+
+				<action
+					android:name="android.intent.action.ASSIST"/>
+
+				<category
+					android:name="android.intent.category.DEFAULT"/>
+
+			</intent-filter>
+
+			<meta-data
+				android:name="com.android.systemui.action_assist_icon"
+				android:resource="@mipmap/ic_launcher"/>
+
+		</activity>
+
 		<meta-data
 			android:name="android.max_aspect"
 			android:value="4.0"/>
